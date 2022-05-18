@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "nethercoordsmod",
+  "version": "${version}",
+  "name": "Nethercoordsmod",
+  "description": "Get your current coords translated to the nether.",
+  "authors": [
+    "niceduckdev"
+  ],
+  "contact": {
+    "website": "www.niceduckdev.xyz"
+  },
+  "license": "MIT",
+  "icon": "assets/nethercoordsmod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "niceduckdev.nethercoordsmod.client.NethercoordsmodClient"
+    ],
+    "main": [
+      "niceduckdev.nethercoordsmod.Nethercoordsmod"
+    ]
+  },
+  "mixins": [
+    "nethercoordsmod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.5",
+    "fabric": "*",
+    "minecraft": "1.18.2"
+  }
+}
